@@ -1,0 +1,55 @@
+header{
+    text-align: center;
+    background-color: #250902;
+    color: white;
+    padding: 30px;
+}
+.hyperlink {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+.hyperlink:hover {
+    color: darkred;
+    transition: 0.4s ease-out;
+}
+footer {
+    margin-top: 100%;
+    background-color: #250902;
+    color: white;
+    padding: 20px;
+}
+.footer-texts {
+    color: white;
+}
+.footer-left,
+.footer-right,
+.footer-middle {
+    flex: 1;
+}
+.footer-left{
+    text-align: left;
+}
+.footer-middle{
+    text-align: center;
+    font-weight: bold;
+}
+.footer-right{
+    text-align: right;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: darkred;
+    transition: 0.4s ease-out;
+}
+body {
+    background-color: #ede7e3;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}

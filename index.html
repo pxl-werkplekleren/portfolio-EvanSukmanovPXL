@@ -10,20 +10,47 @@
 <header id="header">
     <div>
         <h1>Evan Sukmanov</h1>
-        <h2>Welkom op mijn portfolio</h2>
-        <a class="hyperlink" href="logboek.html">Logboek</a>
-        <a class="hyperlink" href="evaluatie.html">Evaluatie</a>
+        <div>
+            <a class="hyperlink" href="logboek.html">Logboek</a>
+            <a class="hyperlink" href="evaluatie.html">Evaluatie</a>
+            <a class="hyperlink" href="competenties.html">Competenties</a>
+        </div>
     </div>
 </header>
 <main>
-    <p>dfds</p>
+    <section class="image" id="image">
+        <h1>Welkom op mijn portfolio</h1>
+    </section>
+    <section class="content" id="content">
+        <div class="flexbox">
+            <div class="main-box"></div>
+        </div>
+    </section>
 </main>
 <footer>
-    <div class="footer-texts">
-        <a class="footer-left" href="https://www.linkedin.com/in/evan-sukmanov/" target="_blank">LinkedIn</a>
-        <p class="footer-middle"><strong>Portfolio</strong></p>
-        <a class="footer-right" href="#header">Terug naar boven</a>
+    <div class="footer-left">
+        <a href="https://www.linkedin.com/in/evan-sukmanov/" target="_blank">LinkedIn</a>
+    </div>
+    <div class="footer-middle">
+        <p><strong>Portfolio</strong></p>
+    </div>
+    <div  class="footer-right">
+        <a href="#header" class="hyperlink">Terug naar boven</a>
     </div>
 </footer>
 </body>
+<script>
+    const hero = document.getElementById("image");
+    const content = document.getElementById("content");
+
+    window.addEventListener("scroll", () => {
+        const contentBottom = content.getBoundingClientRect().bottom;
+
+        if (contentBottom <= 0) {
+            hero.style.opacity = "0";
+        } else {
+            hero.style.opacity = "1";
+        }
+    });
+</script>
 </html>

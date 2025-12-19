@@ -1,6 +1,6 @@
 header{
     text-align: center;
-    background-color: #250902;
+    background-color: #38040e;
     color: white;
     padding: 30px;
 }
@@ -10,7 +10,7 @@ header{
     margin: 20px;
 }
 .hyperlink:hover {
-    color: darkred;
+    color: #AD2831;
     transition: 0.4s ease-out;
 }
 body{
